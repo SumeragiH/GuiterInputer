@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "GuitarInputController.Input/1.0.0": {
+        "dependencies": {
+          "GuitarInputController.Core": "1.0.0"
+        },
+        "runtime": {
+          "GuitarInputController.Input.dll": {}
+        }
+      },
+      "GuitarInputController.Core/1.0.0": {
+        "runtime": {
+          "GuitarInputController.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GuitarInputController.Input/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GuitarInputController.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

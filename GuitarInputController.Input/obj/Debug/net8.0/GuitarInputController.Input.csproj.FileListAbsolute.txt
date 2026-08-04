@@ -1,0 +1,15 @@
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\obj\Debug\net8.0\GuitarInputController.Input.csproj.AssemblyReference.cache
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\obj\Debug\net8.0\GuitarInputController.Input.GeneratedMSBuildEditorConfig.editorconfig
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\obj\Debug\net8.0\GuitarInputController.Input.AssemblyInfoInputs.cache
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\obj\Debug\net8.0\GuitarInputController.Input.AssemblyInfo.cs
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\obj\Debug\net8.0\GuitarInputController.Input.csproj.CoreCompileInputs.cache
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\bin\Debug\net8.0\GuitarInputController.Input.deps.json
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\bin\Debug\net8.0\GuitarInputController.Input.dll
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\bin\Debug\net8.0\GuitarInputController.Input.pdb
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\bin\Debug\net8.0\GuitarInputController.Core.dll
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\bin\Debug\net8.0\GuitarInputController.Core.pdb
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\obj\Debug\net8.0\GuitarIn.5891AE3F.Up2Date
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\obj\Debug\net8.0\GuitarInputController.Input.dll
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\obj\Debug\net8.0\refint\GuitarInputController.Input.dll
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\obj\Debug\net8.0\GuitarInputController.Input.pdb
+D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Input\obj\Debug\net8.0\ref\GuitarInputController.Input.dll

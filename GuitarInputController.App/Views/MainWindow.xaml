@@ -1,0 +1,571 @@
+<Window
+    x:Class="GuitarInputController.App.Views.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="clr-namespace:GuitarInputController.UI.Controls;assembly=GuitarInputController.UI"
+    mc:Ignorable="d"
+    Title="电吉他输入控制器"
+    Width="1000" Height="650"
+    MinWidth="800" MinHeight="500"
+    WindowStyle="None"
+    AllowsTransparency="True"
+    Background="Transparent"
+    ResizeMode="CanResizeWithGrip"
+    WindowStartupLocation="CenterScreen"
+    StateChanged="Window_StateChanged">
+
+    <!-- ═══════════════════════════════════════════════════════════
+         CUSTOM CHROME WINDOW
+         ═══════════════════════════════════════════════════════════ -->
+    <Border
+        Background="{StaticResource BackgroundBrush}"
+        BorderBrush="#D0D0D0"
+        BorderThickness="1"
+        CornerRadius="6">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="34" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- ────── CUSTOM TITLE BAR ────── -->
+            <Border
+                Grid.Row="0"
+                Background="{StaticResource PrimaryBrush}"
+                CornerRadius="6,6,0,0"
+                MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- App icon -->
+                    <TextBlock
+                        Grid.Column="0"
+                        Text="&#x266B;"
+                        FontSize="14"
+                        Foreground="#FFFFFF"
+                        Margin="12,0,4,0"
+                        VerticalAlignment="Center" />
+
+                    <!-- Title -->
+                    <TextBlock
+                        Grid.Column="1"
+                        Text="电吉他输入控制器"
+                        FontSize="12"
+                        FontWeight="SemiBold"
+                        FontFamily="Microsoft YaHei UI"
+                        Foreground="#FFFFFF"
+                        VerticalAlignment="Center" />
+
+                    <!-- Window controls -->
+                    <Button
+                        Grid.Column="4"
+                        Content="&#xE921;"
+                        Width="34"
+                        Height="28"
+                        Background="Transparent"
+                        Foreground="#FFFFFF"
+                        BorderThickness="0"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="10"
+                        Cursor="Hand"
+                        Click="MinimizeButton_Click"
+                        ToolTip="最小化" />
+                    <Button
+                        Grid.Column="5"
+                        Content="&#xE8BB;"
+                        Width="34"
+                        Height="28"
+                        Background="Transparent"
+                        Foreground="#FFFFFF"
+                        BorderThickness="0"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="10"
+                        Cursor="Hand"
+                        Click="CloseButton_Click"
+                        ToolTip="关闭" />
+                </Grid>
+            </Border>
+
+            <!-- ────── MAIN CONTENT SCROLL AREA ────── -->
+            <ScrollViewer
+                Grid.Row="1"
+                VerticalScrollBarVisibility="Auto"
+                HorizontalScrollBarVisibility="Disabled">
+                <StackPanel Margin="16,12">
+
+                    <!-- ═══ TOOLBAR ROW ═══ -->
+                    <Border
+                        Background="{StaticResource SurfaceBrush}"
+                        CornerRadius="6"
+                        Padding="12">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" MinWidth="120" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Device label -->
+                            <TextBlock
+                                Grid.Column="0"
+                                Text="音频设备:"
+                                Style="{StaticResource BodyTextBlockStyle}"
+                                VerticalAlignment="Center"
+                                Margin="0,0,8,0" />
+
+                            <!-- Device combo -->
+                            <ComboBox
+                                Grid.Column="1"
+                                Style="{StaticResource FlatComboBoxStyle}"
+                                ItemsSource="{Binding AudioDevices}"
+                                SelectedItem="{Binding SelectedDevice}"
+                                DisplayMemberPath="DisplayName"
+                                MinWidth="160" />
+
+                            <!-- Start -->
+                            <Button
+                                Grid.Column="2"
+                                Style="{StaticResource PrimaryButtonStyle}"
+                                Content="▶ 开始监听"
+                                Width="110"
+                                Margin="10,0,4,0"
+                                Command="{Binding StartCaptureCommand}"
+                                Visibility="{Binding IsCapturing, Converter={StaticResource BoolToVisibility}, ConverterParameter=Invert}" />
+
+                            <!-- Stop -->
+                            <Button
+                                Grid.Column="3"
+                                Style="{StaticResource SecondaryButtonStyle}"
+                                Content="⏹ 停止"
+                                Width="80"
+                                Margin="4,0,0,0"
+                                Command="{Binding StopCaptureCommand}"
+                                Visibility="{Binding IsCapturing, Converter={StaticResource BoolToVisibility}}" />
+
+                            <!-- Status dot -->
+                            <Ellipse
+                                Grid.Column="4"
+                                Width="12"
+                                Height="12"
+                                Margin="14,0,0,0"
+                                VerticalAlignment="Center">
+                                <Ellipse.Style>
+                                    <Style TargetType="{x:Type Ellipse}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsCapturing}" Value="True">
+                                                <Setter Property="Fill" Value="{StaticResource SuccessBrush}" />
+                                            </DataTrigger>
+                                            <DataTrigger Binding="{Binding IsCapturing}" Value="False">
+                                                <Setter Property="Fill" Value="{StaticResource ErrorBrush}" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Ellipse.Style>
+                            </Ellipse>
+
+                            <!-- Current note -->
+                            <Border
+                                Grid.Column="5"
+                                Background="#FFFFFF"
+                                BorderBrush="{StaticResource BorderBrush}"
+                                BorderThickness="1"
+                                CornerRadius="4"
+                                Padding="12,4"
+                                Margin="14,0,0,0"
+                                MinWidth="80">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock
+                                        Text="当前: "
+                                        Foreground="{StaticResource TextSecondaryBrush}"
+                                        FontSize="12"
+                                        VerticalAlignment="Center" />
+                                    <TextBlock
+                                        Text="{Binding CurrentNote}"
+                                        FontSize="14"
+                                        FontWeight="Bold"
+                                        Foreground="{StaticResource TextPrimaryBrush}"
+                                        VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+
+                            <!-- Audio level meter -->
+                            <ui:AudioLevelMeter
+                                Grid.Column="6"
+                                Level="{Binding AudioLevel}"
+                                Width="100"
+                                Margin="10,0,0,0"
+                                VerticalAlignment="Center" />
+
+                            <!-- Input gain -->
+                            <StackPanel
+                                Grid.Column="7"
+                                Orientation="Horizontal"
+                                Margin="12,0,0,0"
+                                VerticalAlignment="Center">
+                                <TextBlock
+                                    Text="增益"
+                                    Style="{StaticResource CaptionTextBlockStyle}"
+                                    VerticalAlignment="Center"
+                                    Margin="0,0,4,0" />
+                                <Slider
+                                    Width="70"
+                                    Value="{Binding InputGainDb}"
+                                    Minimum="-20"
+                                    Maximum="20"
+                                    SmallChange="0.5"
+                                    Style="{StaticResource FlatSliderStyle}" />
+                                <TextBlock
+                                    Text="{Binding InputGainDb, StringFormat='{}{0:+0.0;-0.0;0.0} dB'}"
+                                    Style="{StaticResource CaptionTextBlockStyle}"
+                                    VerticalAlignment="Center"
+                                    Width="50"
+                                    Margin="4,0,0,0" />
+                            </StackPanel>
+
+                            <!-- Monitor button -->
+                            <Button
+                                Grid.Column="8"
+                                Width="34"
+                                Height="30"
+                                Margin="10,0,0,0"
+                                BorderBrush="{StaticResource BorderBrush}"
+                                BorderThickness="1"
+                                FontFamily="Segoe MDL2 Assets"
+                                FontSize="14"
+                                Content="&#xE7F5;"
+                                Command="{Binding ToggleMonitorCommand}"
+                                ToolTip="测试输入音频（直通到系统播放设备）">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Background" Value="Transparent" />
+                                        <Setter Property="Foreground" Value="{StaticResource TextSecondaryBrush}" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsMonitoring}" Value="True">
+                                                <Setter Property="Background" Value="{StaticResource SuccessBrush}" />
+                                                <Setter Property="Foreground" Value="#FFFFFF" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+
+                            <!-- Refresh devices -->
+                            <Button
+                                Grid.Column="9"
+                                Width="30"
+                                Height="30"
+                                Margin="8,0,0,0"
+                                Background="Transparent"
+                                BorderBrush="{StaticResource BorderBrush}"
+                                BorderThickness="1"
+                                FontFamily="Segoe MDL2 Assets"
+                                FontSize="12"
+                                Content="&#xE72C;"
+                                Command="{Binding RefreshDevicesCommand}"
+                                ToolTip="刷新设备列表" />
+                        </Grid>
+                    </Border>
+
+                    <Separator
+                        Margin="0,12,0,8"
+                        Background="{StaticResource BorderBrush}" />
+
+                    <!-- ═══ MAPPING LIST AREA ═══ -->
+                    <!-- Section header -->
+                    <TextBlock
+                        Text="映射列表"
+                        Style="{StaticResource HeaderTextBlockStyle}"
+                        Margin="0,0,0,8" />
+
+                    <!-- Profile management bar -->
+                    <Border
+                        Background="{StaticResource SurfaceBrush}"
+                        CornerRadius="4"
+                        Padding="10,8"
+                        Margin="0,0,0,8">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" MinWidth="120" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Profile label -->
+                            <TextBlock
+                                Grid.Column="0"
+                                Text="方案:"
+                                Style="{StaticResource BodyTextBlockStyle}"
+                                VerticalAlignment="Center"
+                                Margin="0,0,8,0" />
+
+                            <!-- Profile dropdown -->
+                            <ComboBox
+                                Grid.Column="1"
+                                Style="{StaticResource FlatComboBoxStyle}"
+                                ItemsSource="{Binding ProfileNames}"
+                                SelectedItem="{Binding SelectedProfile}"
+                                Text="{Binding SelectedProfile}"
+                                IsEditable="False"
+                                MinWidth="100" />
+
+                            <!-- Profile action buttons -->
+                            <StackPanel Grid.Column="2" Orientation="Horizontal">
+                                <Button
+                                    Style="{StaticResource PrimaryButtonStyle}"
+                                    Content="加载"
+                                    Command="{Binding LoadProfileCommand}"
+                                    Margin="8,0,4,0"
+                                    MinWidth="56" />
+                                <Button
+                                    Style="{StaticResource SecondaryButtonStyle}"
+                                    Content="新建"
+                                    Command="{Binding NewProfileCommand}"
+                                    Margin="4,0"
+                                    MinWidth="56" />
+                                <Button
+                                    Style="{StaticResource SecondaryButtonStyle}"
+                                    Content="保存"
+                                    Command="{Binding SaveProfileCommand}"
+                                    Margin="4,0"
+                                    MinWidth="56" />
+                                <Button
+                                    Style="{StaticResource SecondaryButtonStyle}"
+                                    Content="导入"
+                                    Command="{Binding ImportProfileCommand}"
+                                    Margin="4,0"
+                                    MinWidth="56" />
+                                <Button
+                                    Style="{StaticResource SecondaryButtonStyle}"
+                                    Content="导出"
+                                    Command="{Binding ExportProfileCommand}"
+                                    Margin="4,0"
+                                    MinWidth="56" />
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
+                    <!-- DataGrid -->
+                    <DataGrid
+                        Style="{StaticResource FlatDataGridStyle}"
+                        ItemsSource="{Binding Mappings}"
+                        SelectedItem="{Binding SelectedMapping}"
+                        MinHeight="180">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn
+                                Header="音符"
+                                Binding="{Binding Note}"
+                                Width="80" />
+                            <DataGridTextColumn
+                                Header="目标操作"
+                                Binding="{Binding KeyCode}"
+                                Width="120" />
+                            <DataGridTextColumn
+                                Header="触发模式"
+                                Binding="{Binding TriggerMode}"
+                                Width="80" />
+                            <DataGridTextColumn
+                                Header="标签"
+                                Binding="{Binding Label}"
+                                Width="*" />
+                            <!-- Edit / Delete buttons -->
+                            <DataGridTemplateColumn Header="操作" Width="110">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button
+                                                Content="编辑"
+                                                Width="50"
+                                                Height="24"
+                                                FontSize="11"
+                                                Style="{StaticResource SecondaryButtonStyle}"
+                                                MinWidth="0"
+                                                Padding="0"
+                                                Command="{Binding DataContext.EditMappingCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
+                                                CommandParameter="{Binding}" />
+                                            <Button
+                                                Content="删除"
+                                                Width="50"
+                                                Height="24"
+                                                FontSize="11"
+                                                Background="{StaticResource ErrorBrush}"
+                                                Foreground="#FFFFFF"
+                                                BorderBrush="{StaticResource ErrorBrush}"
+                                                BorderThickness="1"
+                                                Padding="0"
+                                                Margin="4,0,0,0"
+                                                Command="{Binding DataContext.DeleteMappingCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
+                                                CommandParameter="{Binding}" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <!-- Add mapping -->
+                    <Button
+                        Content="+ 添加映射"
+                        Width="100"
+                        Height="30"
+                        HorizontalAlignment="Left"
+                        Margin="0,10,0,0"
+                        Style="{StaticResource SecondaryButtonStyle}"
+                        Command="{Binding AddMappingCommand}" />
+
+                    <Separator
+                        Margin="0,12,0,8"
+                        Background="{StaticResource BorderBrush}" />
+
+                    <!-- ═══ SUB-WINDOW CONTROLS ═══ -->
+                    <Border
+                        Background="{StaticResource SurfaceBrush}"
+                        CornerRadius="6"
+                        Padding="12">
+                        <StackPanel>
+                        <TextBlock
+                            Text="辅助窗口"
+                            Style="{StaticResource HeaderTextBlockStyle}"
+                            Margin="0,0,0,10" />
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Fretboard section -->
+                            <Border Grid.Column="0" Padding="8">
+                                <StackPanel>
+                                    <CheckBox
+                                        Content="吉他指板"
+                                        IsChecked="{Binding IsFretboardVisible}"
+                                        Style="{StaticResource FlatCheckBoxStyle}" />
+                                    <CheckBox
+                                        Content="置顶"
+                                        IsChecked="{Binding FretboardTopMost}"
+                                        Margin="20,2,0,0"
+                                        Style="{StaticResource FlatCheckBoxStyle}" />
+                                    <StackPanel Orientation="Horizontal" Margin="20,2,0,0">
+                                        <TextBlock
+                                            Text="透明度"
+                                            VerticalAlignment="Center"
+                                            Width="50"
+                                            Style="{StaticResource CaptionTextBlockStyle}" />
+                                        <Slider
+                                            Value="{Binding FretboardOpacity}"
+                                            Width="120"
+                                            Minimum="0.3"
+                                            Maximum="1.0"
+                                            SmallChange="0.05"
+                                            Style="{StaticResource FlatSliderStyle}" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </Border>
+
+                            <!-- Keyboard section -->
+                            <Border Grid.Column="1" Padding="8">
+                                <StackPanel>
+                                    <CheckBox
+                                        Content="虚拟键盘"
+                                        IsChecked="{Binding IsKeyboardVisible}"
+                                        Style="{StaticResource FlatCheckBoxStyle}" />
+                                    <CheckBox
+                                        Content="置顶"
+                                        IsChecked="{Binding KeyboardTopMost}"
+                                        Margin="20,2,0,0"
+                                        Style="{StaticResource FlatCheckBoxStyle}" />
+                                    <StackPanel Orientation="Horizontal" Margin="20,2,0,0">
+                                        <TextBlock
+                                            Text="透明度"
+                                            VerticalAlignment="Center"
+                                            Width="50"
+                                            Style="{StaticResource CaptionTextBlockStyle}" />
+                                        <Slider
+                                            Value="{Binding KeyboardOpacity}"
+                                            Width="120"
+                                            Minimum="0.3"
+                                            Maximum="1.0"
+                                            SmallChange="0.05"
+                                            Style="{StaticResource FlatSliderStyle}" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- ────── STATUS BAR ────── -->
+            <Border
+                Grid.Row="2"
+                Background="{StaticResource SurfaceBrush}"
+                CornerRadius="0,0,6,6"
+                Padding="14,6">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Status text -->
+                    <TextBlock
+                        Grid.Column="0"
+                        Text="{Binding StatusText}"
+                        Foreground="{StaticResource TextSecondaryBrush}"
+                        FontSize="12"
+                        VerticalAlignment="Center" />
+
+                    <!-- Profile name -->
+                    <TextBlock
+                        Grid.Column="2"
+                        Foreground="{StaticResource TextSecondaryBrush}"
+                        FontSize="12"
+                        VerticalAlignment="Center"
+                        Margin="0,0,14,0">
+                        <Run Text="方案: " />
+                        <Run Text="{Binding SelectedProfile, FallbackValue=(无)}" FontWeight="SemiBold" />
+                    </TextBlock>
+
+                    <!-- Advanced settings -->
+                    <Button
+                        Grid.Column="3"
+                        Content="&#xE713; 高级设置"
+                        Background="Transparent"
+                        BorderBrush="{StaticResource BorderBrush}"
+                        BorderThickness="1"
+                        Foreground="{StaticResource TextSecondaryBrush}"
+                        FontSize="12"
+                        Padding="10,4"
+                        Command="{Binding OpenAdvancedSettingsCommand}" />
+                </Grid>
+            </Border>
+
+            <!-- Resize grip -->
+            <ResizeGrip
+                Grid.Row="2"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Width="12"
+                Height="12" />
+        </Grid>
+    </Border>
+</Window>

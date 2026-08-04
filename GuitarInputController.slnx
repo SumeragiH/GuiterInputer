@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="GuitarInputController.App/GuitarInputController.App.csproj" />
+  <Project Path="GuitarInputController.Audio/GuitarInputController.Audio.csproj" />
+  <Project Path="GuitarInputController.Core/GuitarInputController.Core.csproj" />
+  <Project Path="GuitarInputController.Input/GuitarInputController.Input.csproj" />
+  <Project Path="GuitarInputController.UI/GuitarInputController.UI.csproj" />
+</Solution>

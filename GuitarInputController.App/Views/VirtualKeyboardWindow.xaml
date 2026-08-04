@@ -1,0 +1,65 @@
+<Window
+    x:Class="GuitarInputController.App.Views.VirtualKeyboardWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ui="clr-namespace:GuitarInputController.UI.Controls;assembly=GuitarInputController.UI"
+    Title="虚拟键盘"
+    Width="900"
+    Height="280"
+    WindowStyle="None"
+    AllowsTransparency="True"
+    ShowInTaskbar="False"
+    Topmost="{Binding WindowTopMost}"
+    Opacity="{Binding WindowOpacity}"
+    Background="Transparent">
+
+    <Border
+        Background="#2D2D30"
+        BorderBrush="#444444"
+        BorderThickness="1"
+        CornerRadius="4">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!-- Mini title bar -->
+            <Border
+                Grid.Row="0"
+                Background="#383842"
+                Height="26"
+                CornerRadius="4,4,0,0"
+                MouseLeftButtonDown="Window_MouseLeftButtonDown">
+                <Grid>
+                    <TextBlock
+                        Text="虚拟键盘"
+                        Foreground="#CCCCCC"
+                        FontSize="11"
+                        FontFamily="Microsoft YaHei UI"
+                        VerticalAlignment="Center"
+                        Margin="10,0,0,0" />
+                    <Button
+                        Content="&#xE8BB;"
+                        Width="26"
+                        Height="22"
+                        HorizontalAlignment="Right"
+                        Background="Transparent"
+                        Foreground="#CCCCCC"
+                        BorderThickness="0"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="10"
+                        Cursor="Hand"
+                        Click="CloseButton_Click"
+                        ToolTip="关闭" />
+                </Grid>
+            </Border>
+
+            <!-- Virtual keyboard control -->
+            <ui:VirtualKeyboardControl
+                Grid.Row="1"
+                HighlightedKeys="{Binding HighlightedKeys}"
+                KeyboardLayout="{Binding KeyboardLayout}" />
+        </Grid>
+    </Border>
+</Window>

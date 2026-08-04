@@ -1,0 +1,339 @@
+<Window
+    x:Class="GuitarInputController.App.Views.AdvancedSettingsWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:GuitarInputController.App.ViewModels"
+    Title="高级设置"
+    Width="520"
+    Height="560"
+    WindowStyle="None"
+    AllowsTransparency="True"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterOwner"
+    Background="Transparent">
+
+    <Border
+        Background="{StaticResource BackgroundBrush}"
+        BorderBrush="#D0D0D0"
+        BorderThickness="1"
+        CornerRadius="6">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="34" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- ────── TITLE BAR ────── -->
+            <Border
+                Grid.Row="0"
+                Background="{StaticResource PrimaryBrush}"
+                CornerRadius="6,6,0,0"
+                MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+                <Grid>
+                    <TextBlock
+                        Text="高级设置"
+                        Foreground="#FFFFFF"
+                        FontSize="13"
+                        FontWeight="SemiBold"
+                        FontFamily="Microsoft YaHei UI"
+                        VerticalAlignment="Center"
+                        Margin="14,0,0,0" />
+                    <Button
+                        Content="&#xE8BB;"
+                        Width="36"
+                        Height="28"
+                        HorizontalAlignment="Right"
+                        Background="Transparent"
+                        Foreground="#FFFFFF"
+                        BorderThickness="0"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="14"
+                        Cursor="Hand"
+                        Click="CloseButton_Click"
+                        ToolTip="关闭" />
+                </Grid>
+            </Border>
+
+            <!-- ────── SETTINGS CONTENT ────── -->
+            <ScrollViewer
+                Grid.Row="1"
+                VerticalScrollBarVisibility="Auto"
+                Margin="16,12">
+                <StackPanel>
+
+                    <!-- ═══ 音频参数 ═══ -->
+                    <GroupBox Header="音频参数" Style="{StaticResource FlatGroupBoxStyle}">
+                        <StackPanel>
+                            <!-- Sample rate -->
+                            <Grid Margin="0,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="120" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Text="采样率"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                                <ComboBox
+                                    Grid.Column="1"
+                                    Width="140"
+                                    ItemsSource="{x:Static vm:AdvancedSettingsViewModel.SampleRatePresets}"
+                                    SelectedItem="{Binding SampleRate}"
+                                    Style="{StaticResource FlatComboBoxStyle}" />
+                            </Grid>
+
+                            <!-- Buffer size -->
+                            <Grid Margin="0,8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="120" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Text="缓冲区大小 (ms)"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                                <ComboBox
+                                    Grid.Column="1"
+                                    Width="140"
+                                    ItemsSource="{x:Static vm:AdvancedSettingsViewModel.BufferSizePresets}"
+                                    SelectedItem="{Binding BufferSizeMs}"
+                                    Style="{StaticResource FlatComboBoxStyle}" />
+                            </Grid>
+
+                            <!-- Volume threshold -->
+                            <Grid Margin="0,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="120" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Text="音量阈值"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                                <Slider
+                                    Grid.Column="1"
+                                    Width="140"
+                                    Value="{Binding VolumeThreshold}"
+                                    Minimum="0.0"
+                                    Maximum="0.5"
+                                    SmallChange="0.01"
+                                    Style="{StaticResource FlatSliderStyle}" />
+                                <TextBlock
+                                    Grid.Column="2"
+                                    Text="{Binding VolumeThreshold, StringFormat='{}{0:F2}'}"
+                                    VerticalAlignment="Center"
+                                    Margin="8,0,0,0"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                            </Grid>
+
+                            <!-- Input gain -->
+                            <Grid Margin="0,8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="120" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Text="输入增益 (dB)"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                                <Slider
+                                    Grid.Column="1"
+                                    Width="140"
+                                    Value="{Binding InputGainDb}"
+                                    Minimum="-20"
+                                    Maximum="20"
+                                    SmallChange="0.5"
+                                    Style="{StaticResource FlatSliderStyle}" />
+                                <TextBlock
+                                    Grid.Column="2"
+                                    Text="{Binding InputGainDb, StringFormat='{}{0:+0.0;-0.0;0.0} dB'}"
+                                    VerticalAlignment="Center"
+                                    Margin="8,0,0,0"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                            </Grid>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <!-- ═══ 音高检测参数 ═══ -->
+                    <GroupBox Header="音高检测参数" Style="{StaticResource FlatGroupBoxStyle}">
+                        <StackPanel>
+                            <!-- A4 frequency -->
+                            <Grid Margin="0,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="120" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Text="A4 频率 (Hz)"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                                <TextBox
+                                    Grid.Column="1"
+                                    Width="120"
+                                    Text="{Binding A4Frequency}"
+                                    Style="{StaticResource FlatTextBoxStyle}" />
+                            </Grid>
+
+                            <!-- Min note duration -->
+                            <Grid Margin="0,8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="120" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Text="最小持续时长 (ms)"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                                <TextBox
+                                    Grid.Column="1"
+                                    Width="120"
+                                    Text="{Binding MinNoteDurationMs}"
+                                    Style="{StaticResource FlatTextBoxStyle}" />
+                            </Grid>
+
+                            <!-- Confidence threshold -->
+                            <Grid Margin="0,8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="120" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Text="置信度阈值"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                                <Slider
+                                    Grid.Column="1"
+                                    Width="140"
+                                    Value="{Binding ConfidenceThreshold}"
+                                    Minimum="0.3"
+                                    Maximum="1.0"
+                                    SmallChange="0.05"
+                                    Style="{StaticResource FlatSliderStyle}" />
+                                <TextBlock
+                                    Grid.Column="2"
+                                    Text="{Binding ConfidenceThreshold, StringFormat='{}{0:F2}'}"
+                                    VerticalAlignment="Center"
+                                    Margin="8,0,0,0"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                            </Grid>
+
+                            <!-- Min input interval -->
+                            <Grid Margin="0,8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="120" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Text="最小输入间隔 (ms)"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                                <TextBox
+                                    Grid.Column="1"
+                                    Width="120"
+                                    Text="{Binding MinInputIntervalMs}"
+                                    Style="{StaticResource FlatTextBoxStyle}" />
+                            </Grid>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <!-- ═══ 全局热键 ═══ -->
+                    <GroupBox Header="全局热键" Style="{StaticResource FlatGroupBoxStyle}">
+                        <StackPanel>
+                            <!-- Toggle input hotkey -->
+                            <Grid Margin="0,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="140" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Text="启用/禁用输入"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                                <TextBox
+                                    Grid.Column="1"
+                                    Width="180"
+                                    Text="{Binding ToggleInputHotKey}"
+                                    Style="{StaticResource FlatTextBoxStyle}" />
+                            </Grid>
+
+                            <!-- Switch profile hotkey -->
+                            <Grid Margin="0,8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="140" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Text="切换映射方案"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource BodyTextBlockStyle}" />
+                                <TextBox
+                                    Grid.Column="1"
+                                    Width="180"
+                                    Text="{Binding SwitchProfileHotKey}"
+                                    Style="{StaticResource FlatTextBoxStyle}" />
+                            </Grid>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <!-- ═══ 应用行为 ═══ -->
+                    <GroupBox Header="应用行为" Style="{StaticResource FlatGroupBoxStyle}">
+                        <StackPanel>
+                            <CheckBox
+                                Content="开机自启动"
+                                IsChecked="{Binding AutoStart}"
+                                Margin="0,4"
+                                Style="{StaticResource FlatCheckBoxStyle}" />
+                            <CheckBox
+                                Content="启动后最小化到系统托盘"
+                                IsChecked="{Binding StartMinimized}"
+                                Margin="0,6"
+                                Style="{StaticResource FlatCheckBoxStyle}" />
+                            <CheckBox
+                                Content="关闭窗口时最小化到托盘"
+                                IsChecked="{Binding CloseToTray}"
+                                Margin="0,6"
+                                Style="{StaticResource FlatCheckBoxStyle}" />
+                        </StackPanel>
+                    </GroupBox>
+
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- ────── BOTTOM BUTTONS ────── -->
+            <Border
+                Grid.Row="2"
+                Background="{StaticResource SurfaceBrush}"
+                CornerRadius="0,0,6,6"
+                Padding="16,10">
+                <StackPanel
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+                    <Button
+                        Content="恢复默认"
+                        Width="90"
+                        Height="30"
+                        Command="{Binding ResetToDefaultsCommand}"
+                        Style="{StaticResource SecondaryButtonStyle}" />
+                    <Button
+                        Content="取消"
+                        Width="70"
+                        Height="30"
+                        Margin="8,0,0,0"
+                        Command="{Binding CancelCommand}"
+                        Style="{StaticResource SecondaryButtonStyle}" />
+                    <Button
+                        Content="保存"
+                        Width="70"
+                        Height="30"
+                        Margin="8,0,0,0"
+                        Command="{Binding SaveCommand}"
+                        Style="{StaticResource PrimaryButtonStyle}" />
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
