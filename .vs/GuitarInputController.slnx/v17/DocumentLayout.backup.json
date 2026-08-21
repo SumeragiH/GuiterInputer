@@ -3,66 +3,12 @@
   "WorkspaceRootPath": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SumeragiH\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\THIRD-PARTY-NOTICES.TXT||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|solutionrelative:guitarinputcontroller.app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SumeragiH\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\LICENSE.TXT||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.audio\\guitarinputcontroller.audio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|solutionrelative:guitarinputcontroller.audio\\guitarinputcontroller.audio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.app\\guitarinputcontroller.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|solutionrelative:guitarinputcontroller.app\\guitarinputcontroller.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D368282-FF0E-F2C8-3264-5E6462E4F980}|GuitarInputController.Core\\GuitarInputController.Core.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.core\\models\\hotkeysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D368282-FF0E-F2C8-3264-5E6462E4F980}|GuitarInputController.Core\\GuitarInputController.Core.csproj|solutionrelative:guitarinputcontroller.core\\models\\hotkeysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D368282-FF0E-F2C8-3264-5E6462E4F980}|GuitarInputController.Core\\GuitarInputController.Core.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.core\\models\\audiosettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D368282-FF0E-F2C8-3264-5E6462E4F980}|GuitarInputController.Core\\GuitarInputController.Core.csproj|solutionrelative:guitarinputcontroller.core\\models\\audiosettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D368282-FF0E-F2C8-3264-5E6462E4F980}|GuitarInputController.Core\\GuitarInputController.Core.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.core\\models\\audiodeviceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D368282-FF0E-F2C8-3264-5E6462E4F980}|GuitarInputController.Core\\GuitarInputController.Core.csproj|solutionrelative:guitarinputcontroller.core\\models\\audiodeviceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D368282-FF0E-F2C8-3264-5E6462E4F980}|GuitarInputController.Core\\GuitarInputController.Core.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.core\\models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D368282-FF0E-F2C8-3264-5E6462E4F980}|GuitarInputController.Core\\GuitarInputController.Core.csproj|solutionrelative:guitarinputcontroller.core\\models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.audio\\services\\audiocaptureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|solutionrelative:guitarinputcontroller.audio\\services\\audiocaptureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.audio\\interfaces\\iaudiocaptureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|solutionrelative:guitarinputcontroller.audio\\interfaces\\iaudiocaptureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.audio\\models\\audiolevelinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|solutionrelative:guitarinputcontroller.audio\\models\\audiolevelinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.audio\\models\\audioconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|solutionrelative:guitarinputcontroller.audio\\models\\audioconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.audio\\interfaces\\ipitchdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8E8382F-A9D8-FBFB-341A-3695638E9F23}|GuitarInputController.Audio\\GuitarInputController.Audio.csproj|solutionrelative:guitarinputcontroller.audio\\interfaces\\ipitchdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D368282-FF0E-F2C8-3264-5E6462E4F980}|GuitarInputController.Core\\GuitarInputController.Core.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.core\\services\\imappingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D368282-FF0E-F2C8-3264-5E6462E4F980}|GuitarInputController.Core\\GuitarInputController.Core.csproj|solutionrelative:guitarinputcontroller.core\\services\\imappingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27C3A62D-57C7-6F0C-8491-F10E4C11CD7E}|GuitarInputController.Input\\GuitarInputController.Input.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.input\\services\\inputsimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27C3A62D-57C7-6F0C-8491-F10E4C11CD7E}|GuitarInputController.Input\\GuitarInputController.Input.csproj|solutionrelative:guitarinputcontroller.input\\services\\inputsimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8467A65-E7DD-32D3-F546-0DB44BE6F288}|GuitarInputController.UI\\GuitarInputController.UI.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.ui\\controls\\fretboardcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8467A65-E7DD-32D3-F546-0DB44BE6F288}|GuitarInputController.UI\\GuitarInputController.UI.csproj|solutionrelative:guitarinputcontroller.ui\\controls\\fretboardcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|solutionrelative:guitarinputcontroller.app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8467A65-E7DD-32D3-F546-0DB44BE6F288}|GuitarInputController.UI\\GuitarInputController.UI.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.ui\\controls\\virtualkeyboardcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -75,18 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.app\\views\\fretboardwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|solutionrelative:guitarinputcontroller.app\\views\\fretboardwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.app\\views\\mappingeditordialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|solutionrelative:guitarinputcontroller.app\\views\\mappingeditordialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|solutionrelative:guitarinputcontroller.app\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.app\\views\\virtualkeyboardwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|solutionrelative:guitarinputcontroller.app\\views\\virtualkeyboardwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05947CE1-E694-64EB-7B78-49D776336F1D}|GuitarInputController.App\\GuitarInputController.App.csproj|d:\\360movedata\\users\\sumeragih\\desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\guitarinputcontroller.app\\views\\advancedsettingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -124,307 +58,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "THIRD-PARTY-NOTICES.TXT",
-              "DocumentMoniker": "C:\\Users\\SumeragiH\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\THIRD-PARTY-NOTICES.TXT",
-              "ToolTip": "C:\\Users\\SumeragiH\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\THIRD-PARTY-NOTICES.TXT [\u53EA\u8BFB]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-08-06T15:33:30.42Z",
-              "EditorCaption": " [\u53EA\u8BFB]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LICENSE.TXT",
-              "DocumentMoniker": "C:\\Users\\SumeragiH\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\LICENSE.TXT",
-              "ToolTip": "C:\\Users\\SumeragiH\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\LICENSE.TXT [\u53EA\u8BFB]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-08-06T15:33:23.76Z",
-              "EditorCaption": " [\u53EA\u8BFB]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GuitarInputController.Audio",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\GuitarInputController.Audio.csproj",
-              "RelativeDocumentMoniker": "GuitarInputController.Audio\\GuitarInputController.Audio.csproj",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\GuitarInputController.Audio.csproj",
-              "RelativeToolTip": "GuitarInputController.Audio\\GuitarInputController.Audio.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-08-06T15:32:48.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HotKeySettings.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Core\\Models\\HotKeySettings.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.Core\\Models\\HotKeySettings.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Core\\Models\\HotKeySettings.cs",
-              "RelativeToolTip": "GuitarInputController.Core\\Models\\HotKeySettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:29:10.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AudioCaptureService.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\Services\\AudioCaptureService.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.Audio\\Services\\AudioCaptureService.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\Services\\AudioCaptureService.cs",
-              "RelativeToolTip": "GuitarInputController.Audio\\Services\\AudioCaptureService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:26:01.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AudioLevelInfo.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\Models\\AudioLevelInfo.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.Audio\\Models\\AudioLevelInfo.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\Models\\AudioLevelInfo.cs",
-              "RelativeToolTip": "GuitarInputController.Audio\\Models\\AudioLevelInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:25:15.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IAudioCaptureService.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\Interfaces\\IAudioCaptureService.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.Audio\\Interfaces\\IAudioCaptureService.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\Interfaces\\IAudioCaptureService.cs",
-              "RelativeToolTip": "GuitarInputController.Audio\\Interfaces\\IAudioCaptureService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:25:11.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AudioDeviceInfo.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Core\\Models\\AudioDeviceInfo.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.Core\\Models\\AudioDeviceInfo.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Core\\Models\\AudioDeviceInfo.cs",
-              "RelativeToolTip": "GuitarInputController.Core\\Models\\AudioDeviceInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:24:54.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppSettings.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Core\\Models\\AppSettings.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.Core\\Models\\AppSettings.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Core\\Models\\AppSettings.cs",
-              "RelativeToolTip": "GuitarInputController.Core\\Models\\AppSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:24:52.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GuitarInputController.App.csproj",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\GuitarInputController.App.csproj",
-              "RelativeDocumentMoniker": "GuitarInputController.App\\GuitarInputController.App.csproj",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\GuitarInputController.App.csproj",
-              "RelativeToolTip": "GuitarInputController.App\\GuitarInputController.App.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-08-06T09:12:40.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AudioConfig.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\Models\\AudioConfig.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.Audio\\Models\\AudioConfig.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\Models\\AudioConfig.cs",
-              "RelativeToolTip": "GuitarInputController.Audio\\Models\\AudioConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:25:14.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AudioSettings.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Core\\Models\\AudioSettings.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.Core\\Models\\AudioSettings.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Core\\Models\\AudioSettings.cs",
-              "RelativeToolTip": "GuitarInputController.Core\\Models\\AudioSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:24:55.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IPitchDetector.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\Interfaces\\IPitchDetector.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.Audio\\Interfaces\\IPitchDetector.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Audio\\Interfaces\\IPitchDetector.cs",
-              "RelativeToolTip": "GuitarInputController.Audio\\Interfaces\\IPitchDetector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:25:12.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IMappingService.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Core\\Services\\IMappingService.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.Core\\Services\\IMappingService.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Core\\Services\\IMappingService.cs",
-              "RelativeToolTip": "GuitarInputController.Core\\Services\\IMappingService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:24:28.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "InputSimulator.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Input\\Services\\InputSimulator.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.Input\\Services\\InputSimulator.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.Input\\Services\\InputSimulator.cs",
-              "RelativeToolTip": "GuitarInputController.Input\\Services\\InputSimulator.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAmwAwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:23:26.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FretboardControl.xaml.cs",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.UI\\Controls\\FretboardControl.xaml.cs",
-              "RelativeDocumentMoniker": "GuitarInputController.UI\\Controls\\FretboardControl.xaml.cs",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.UI\\Controls\\FretboardControl.xaml.cs",
-              "RelativeToolTip": "GuitarInputController.UI\\Controls\\FretboardControl.xaml.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAkwPYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:20:58.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "VirtualKeyboardWindow.xaml",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\VirtualKeyboardWindow.xaml",
-              "RelativeDocumentMoniker": "GuitarInputController.App\\Views\\VirtualKeyboardWindow.xaml",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\VirtualKeyboardWindow.xaml",
-              "RelativeToolTip": "GuitarInputController.App\\Views\\VirtualKeyboardWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-08-06T15:19:16.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MappingEditorDialog.xaml",
-              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\MappingEditorDialog.xaml",
-              "RelativeDocumentMoniker": "GuitarInputController.App\\Views\\MappingEditorDialog.xaml",
-              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\MappingEditorDialog.xaml",
-              "RelativeToolTip": "GuitarInputController.App\\Views\\MappingEditorDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-08-06T15:19:12.658Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\MainWindow.xaml",
               "RelativeDocumentMoniker": "GuitarInputController.App\\Views\\MainWindow.xaml",
               "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\MainWindow.xaml",
               "RelativeToolTip": "GuitarInputController.App\\Views\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-08-06T15:05:07.033Z",
+              "WhenOpened": "2026-08-08T08:44:44.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\App.xaml",
+              "RelativeDocumentMoniker": "GuitarInputController.App\\App.xaml",
+              "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\App.xaml",
+              "RelativeToolTip": "GuitarInputController.App\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-08T08:44:27.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FretboardWindow.xaml",
               "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\FretboardWindow.xaml",
               "RelativeDocumentMoniker": "GuitarInputController.App\\Views\\FretboardWindow.xaml",
               "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\FretboardWindow.xaml",
               "RelativeToolTip": "GuitarInputController.App\\Views\\FretboardWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-08-06T15:14:38.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T15:14:38.865Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 3,
               "Title": "FretboardControl.xaml",
               "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.UI\\Controls\\FretboardControl.xaml",
               "RelativeDocumentMoniker": "GuitarInputController.UI\\Controls\\FretboardControl.xaml",
               "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.UI\\Controls\\FretboardControl.xaml",
               "RelativeToolTip": "GuitarInputController.UI\\Controls\\FretboardControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-08-06T15:04:52.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T15:04:52.333Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 2,
               "Title": "VirtualKeyboardControl.xaml",
               "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.UI\\Controls\\VirtualKeyboardControl.xaml",
               "RelativeDocumentMoniker": "GuitarInputController.UI\\Controls\\VirtualKeyboardControl.xaml",
               "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.UI\\Controls\\VirtualKeyboardControl.xaml",
               "RelativeToolTip": "GuitarInputController.UI\\Controls\\VirtualKeyboardControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-08-06T15:04:37.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T15:04:37.923Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 5,
               "Title": "AdvancedSettingsWindow.xaml",
               "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\AdvancedSettingsWindow.xaml",
               "RelativeDocumentMoniker": "GuitarInputController.App\\Views\\AdvancedSettingsWindow.xaml",
               "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\AdvancedSettingsWindow.xaml",
               "RelativeToolTip": "GuitarInputController.App\\Views\\AdvancedSettingsWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-08-06T15:17:33.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T15:17:33.949Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 6,
               "Title": "AdvancedSettingsWindow.xaml.cs",
               "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\AdvancedSettingsWindow.xaml.cs",
               "RelativeDocumentMoniker": "GuitarInputController.App\\Views\\AdvancedSettingsWindow.xaml.cs",
@@ -432,12 +141,11 @@
               "RelativeToolTip": "GuitarInputController.App\\Views\\AdvancedSettingsWindow.xaml.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:17:27.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T15:17:27.206Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\Views\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GuitarInputController.App\\Views\\MainWindow.xaml.cs",
@@ -445,24 +153,22 @@
               "RelativeToolTip": "GuitarInputController.App\\Views\\MainWindow.xaml.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAQwDcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:05:37.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T15:05:37.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 8,
               "Title": "AudioLevelMeter.xaml",
               "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.UI\\Controls\\AudioLevelMeter.xaml",
               "RelativeDocumentMoniker": "GuitarInputController.UI\\Controls\\AudioLevelMeter.xaml",
               "ToolTip": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.UI\\Controls\\AudioLevelMeter.xaml",
               "RelativeToolTip": "GuitarInputController.UI\\Controls\\AudioLevelMeter.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-08-06T15:04:46.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T15:04:46.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 9,
               "Title": "WindowDragBehavior.cs",
               "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.UI\\Behaviors\\WindowDragBehavior.cs",
               "RelativeDocumentMoniker": "GuitarInputController.UI\\Behaviors\\WindowDragBehavior.cs",
@@ -470,12 +176,11 @@
               "RelativeToolTip": "GuitarInputController.UI\\Behaviors\\WindowDragBehavior.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T15:04:24.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T15:04:24.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 10,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "GuitarInputController.App\\AssemblyInfo.cs",
@@ -483,12 +188,11 @@
               "RelativeToolTip": "GuitarInputController.App\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T09:13:59.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T09:13:59.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 11,
               "Title": "AppHost.cs",
               "DocumentMoniker": "D:\\360MoveData\\Users\\SumeragiH\\Desktop\\\u7535\u5409\u4ED6\u8F93\u5165\u63A7\u5236\u5668\\GuitarInputController.App\\AppHost.cs",
               "RelativeDocumentMoniker": "GuitarInputController.App\\AppHost.cs",

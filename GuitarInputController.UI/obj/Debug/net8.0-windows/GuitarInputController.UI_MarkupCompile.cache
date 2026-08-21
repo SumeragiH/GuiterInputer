@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.UI\obj\Debug\net8.0-windows\
+d:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.UI\obj\Debug\net8.0-windows\
 GuitarInputController.UI
 none
 false
@@ -13,7 +13,7 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 3-398207360
 
 8-467853021
-199-691430653
+199338606999
 Controls\AudioLevelMeter.xaml;Controls\FretboardControl.xaml;Controls\VirtualKeyboardControl.xaml;
 
 False

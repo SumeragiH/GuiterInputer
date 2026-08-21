@@ -9,3 +9,4 @@ D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputContr
 D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Core\obj\Debug\net8.0\refint\GuitarInputController.Core.dll
 D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Core\obj\Debug\net8.0\GuitarInputController.Core.pdb
 D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Core\obj\Debug\net8.0\ref\GuitarInputController.Core.dll
+d:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.Core\obj\Debug\net8.0\GuitarInputController.Core.sourcelink.json

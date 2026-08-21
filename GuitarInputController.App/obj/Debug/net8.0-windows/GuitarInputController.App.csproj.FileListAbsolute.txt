@@ -50,3 +50,4 @@ D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputContr
 D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.App\obj\Debug\net8.0-windows\GuitarInputController.App.pdb
 D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.App\obj\Debug\net8.0-windows\GuitarInputController.App.genruntimeconfig.cache
 D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.App\obj\Debug\net8.0-windows\ref\GuitarInputController.App.dll
+d:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.App\obj\Debug\net8.0-windows\GuitarInputController.App.sourcelink.json

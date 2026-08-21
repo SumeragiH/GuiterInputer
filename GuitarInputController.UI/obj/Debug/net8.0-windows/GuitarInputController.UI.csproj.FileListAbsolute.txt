@@ -21,3 +21,4 @@ D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputContr
 D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.UI\obj\Debug\net8.0-windows\refint\GuitarInputController.UI.dll
 D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.UI\obj\Debug\net8.0-windows\GuitarInputController.UI.pdb
 D:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.UI\obj\Debug\net8.0-windows\ref\GuitarInputController.UI.dll
+d:\360MoveData\Users\SumeragiH\Desktop\电吉他输入控制器\GuitarInputController.UI\obj\Debug\net8.0-windows\GuitarInputController.UI.sourcelink.json
